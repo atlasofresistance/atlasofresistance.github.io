@@ -3,33 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atlas of Resistance · Atlas de la Resistencia</title>
-  <meta name="description" content="Atlas of Resistance / Atlas de la Resistencia — coming soon / próximamente.">
-  <style>
-    :root { --bg: #f7f4ee; --ink: #1f1d1a; --muted: #6b655c; --rule: #d8d1c4; }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg: #171614; --ink: #f1ede6; --muted: #a39c90; --rule: #3a3631; }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; min-height: 100vh; display: grid; place-items: center;
-      background: var(--bg); color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif; padding: 24px;
-    }
-    main { max-width: 640px; text-align: center; }
-    h1 { font-weight: normal; font-size: clamp(1.8rem, 5vw, 2.8rem); margin: 0 0 .25em; line-height: 1.15; }
-    h1 + h1 { font-style: italic; color: var(--muted); }
-    hr { width: 64px; border: 0; border-top: 1px solid var(--rule); margin: 2rem auto; }
-    p { color: var(--muted); font-size: 1.05rem; margin: .35em 0; }
-  </style>
+  <title>Atlas of Resistance</title>
+  <meta name="description" content="An interactive digital platform for exploring cultural resistance and urban change in Madrid.">
+  <link rel="alternate" hreflang="en" href="https://atlasofresistance.com/">
+  <link rel="alternate" hreflang="es" href="https://atlasofresistance.com/es/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;0,800;1,400&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <main>
-    <h1>Atlas of Resistance</h1>
-    <h1 lang="es">Atlas de la Resistencia</h1>
-    <hr>
-    <p>Coming soon.</p>
-    <p lang="es">Próximamente.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Atlas of Resistance, home">Atlas of Resistance</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/explore/">Explore</a>
+        <a href="/about/">About</a>
+        <a href="/methods/">Methods</a>
+        <a href="/team/">Team</a>
+        <a class="lang" href="/es/" hreflang="es" lang="es">Español</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap">
+
+      <section class="hero">
+        <h1>Atlas of Resistance</h1>
+        <p class="subtitle">Places and Culture in Dialogue</p>
+      </section>
+      <section class="prose" aria-labelledby="overview">
+        <h2 id="overview">Project Overview</h2>
+        <p>This navigable atlas and archive examines cultural resistance as a defining dimension of urban life, making visible the structural pressures, social and narrative patterns, and aesthetic forms that shaped Madrid during the first two decades of the twenty-first century.</p>
+        <p>The platform brings together spatial data and cultural materials to map where and how these practices emerge. By layering demographic, housing, surveillance, environmental, and urban planning data, it invites users to explore how creative practices take shape within—and respond to—the infrastructures that organize urban life.</p>
+        <p>The present prototype centers on this dynamic in the context of Madrid’s Lavapiés neighborhood, a district shaped by a long history of disenfranchisement linked to shifting populations of religious minorities, political dissidents, and racialized communities from Africa, Asia, and Latin America.</p>
+        <p>The Atlas is designed to serve as both a research tool and a curated digital archive that documents ephemeral practices typically absent from institutional preservation.</p>
+      </section>
+      <section aria-labelledby="explore">
+        <h2 id="explore">Explore the Atlas</h2>
+        <ul class="cards">
+          <li><a class="card" href="/explore/#tours"><h3>Start with a guided tour</h3><span class="tag">Coming soon</span></a></li>
+          <li><a class="card" href="/explore/"><h3>Browse the map by theme</h3><span class="tag">Coming soon</span></a></li>
+          <li><div class="card"><h3>Explore the archive</h3><span class="tag">Coming soon</span></div></li>
+          <li><a class="card" href="/methods/"><h3>Learn about the data and methods</h3><p>Methodology, ethics, and sources</p></a></li>
+        </ul>
+      </section>
+    </div>
   </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>An Ohio State University research project.</p>
+      <p>Contact: <a href="mailto:atlasdmadrid@gmail.com">atlasdmadrid@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
